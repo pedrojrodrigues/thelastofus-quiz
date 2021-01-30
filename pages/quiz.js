@@ -43,50 +43,21 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>The Last of Us</h1>
+            <h1>Pergunta 1 de 5</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>
-              Teste os seus conhecimentos sobre The last of us e descubra se você sabe tudo sobre o melhor jogo de 2020! 
-            </p>
+            
+            <h2>Questão?</h2>
             <form onSubmit={function (infosDoEvento) {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
               console.log('Fazendo uma submissão por meio do react');
             }}
             >
-              <input
-                onChange={function (infosDoEvento) {
-                  console.log(infosDoEvento.target.value);
-                  // State
-                  // name = infosDoEvento.target.value;
-                  setName(infosDoEvento.target.value);
-                }}
-                placeholder="Digite o seu nome"
-              />
-              <button type="submit" disabled={name.length === 0}>
+              <button type="submit">
                 JOGAR
-                {name}
               </button>
             </form>
-          </Widget.Content>
-        </Widget>
-
-        <Widget>
-          <Widget.Content>
-            <h1>Quizes da galera</h1>
-            <p>Dá uma olhada nesses quizes incríveis que o pessoal da Imersão React fez:</p>
-            <ul>
-              <li>
-                <a href="https://aluraquiz-css.omariosouto.vercel.app/">omariosouto/aluraquiz-css</a>
-              </li>
-              <li>
-                <a href="https://aluraquiz-css.omariosouto.vercel.app/quiz/aluraquiz-base___alura-challenges">alura-challenges/aluraquiz-base</a>
-              </li>
-              <li>
-                <a href="https://aluraquiz-css.omariosouto.vercel.app/quiz/aluraquiz-devsoutinho___omariosouto">omariosouto/aluraquiz-devsoutinho</a>
-              </li>
-            </ul>
           </Widget.Content>
         </Widget>
         <Footer />
