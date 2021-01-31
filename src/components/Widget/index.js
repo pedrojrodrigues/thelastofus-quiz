@@ -46,24 +46,6 @@ Widget.Content = styled.div`
     padding: 0;
     margin-top: 20px;
   }
-  input {
-    display: block;
-    width: 100%;
-    padding: 7px;
-    margin: 25px 0 25px 0;
-    border: 1px solid #7690A5;
-    background: #162029;
-    color: #fff;
-  }
-  button {
-    display: block;
-    width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 1px;
-    background: #7690A5;
-    color: #fff;
-  }
   li {
     margin-bottom: 8px;
     padding: 5px 15px 5px 15px;
@@ -74,6 +56,24 @@ Widget.Content = styled.div`
     color: #fff;
     text-decoration: none;
     font-size: 14px;
+  }
+`;
+
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: #22272B;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 1px;
+  transition: .3s;
+  display: block;
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
   }
 `;
 

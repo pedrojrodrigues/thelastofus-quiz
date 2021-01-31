@@ -4,27 +4,121 @@
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
         {
-            "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-            "title": "Como fazer um seletor por id via CSS?",
-            "description": "Essa é pra aquecer",
-            "answer": 2,
+            "image": "https://igniteunmc.com/wp-content/uploads/2020/12/the-last-of-us-listing-thumb-01-ps3-us-20nov14.png",
+            "title": "Quando saiu o primeiro The Last of Us?",
+            "description": "",
+            "answer": 1,
             "alternatives": [
-                ".elemento",
-                "*elemento",
-                "#elemento",
-                "%elemento"
+                "2015",
+                "2013",
+                "2017",
+                "2011"
             ]
         },
         {
-            "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-            "title": "Como fazer um background gradiente com css?",
-            "description": "Faz tempo em haha",
+            "image": "https://s2.glbimg.com/4FFpdIOy45pJHjXGFMhKCi32FDk=/0x0:695x390/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/n/3/ql6aJbRPam63wA6FtKbA/the-last-of-us-part-2-arte-ellie-noite.jpg",
+            "title": "Quais são os personagens que controlamos durante o jogo?",
+            "description": "",
+            "answer": 3,
+            "alternatives": [
+                "Ellie e Abby",
+                "Joel, Ellie, Jesse, Abby e Dina",
+                "Joel e Ellie",
+                "Joel, Ellie e Abby"
+            ]
+        },
+        {
+            "image": "https://www.gamereactor.pt/media/55/lastus_3175573b.jpg",
+            "title": "Qual a marca do violão que Joel dá para Ellie?",
+            "description": "",
             "answer": 0,
             "alternatives": [
-                "background: linear-gradient(#e66465, #9198e5);",
-                "background: gradient(#e66465, #9198e5);"
+                "Taylor",
+                "Crafter",
+                "Fender"
+            ]
+        },
+        {
+            "image": "https://cdn.vox-cdn.com/thumbor/VBxRLOsGbS0EefQppsTiN9Z3uj4=/0x0:1919x1080/1200x800/filters:focal(606x1:912x307)/cdn.vox-cdn.com/uploads/chorus_image/image/67067295/joel.0.jpeg",
+            "title": "Qual é a música que Joel toca no INÍCIO do jogo para Ellie?",
+            "description": "",
+            "answer": 2,
+            "alternatives": [
+                "You and Me",
+                "Days",
+                "Future Days"
+            ]
+        },
+        {
+            "image": "https://cdn.vox-cdn.com/thumbor/7zRob9ZB6_t0CnNVvCknNSLB0bA=/66x0:783x478/1400x788/filters:focal(66x0:783x478):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/45131820/last-of-us-left-behind_850.0.0.jpg",
+            "title": "Quem era a melhor amiga de Ellie que foi infectada no The Last of Us LEFT BEHIND?",
+            "description": "",
+            "answer": 2,
+            "alternatives": [
+                "Maria",
+                "Katherin",
+                "Riley"
+            ]
+        },
+        {
+            "image": "https://cdn.gamer-network.net/2020/usgamer/The-Last-of-Us-Part-2-State-of-Play-05272020.jpg/EG11/thumbnail/1920x1080/format/jpg/quality/65/where-to-watch-todays-the-last-of-us-part-2-gameplay-showcase.jpg",
+            "title": "Onde foi o PRIMEIRO beijo de Ellie e Dina?",
+            "description": "",
+            "answer": 2,
+            "alternatives": [
+                "em um bar",
+                "num carro",
+                "em uma festa",
+                "casa do joel"
+            ]
+        },
+        {
+            "image": "https://s2.glbimg.com/wxU5IRov7dhLv1lgEz7jlgtdzzg=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/t/n/3BORX0SAy9q3KBK5dwHw/the-last-of-us-part-2-abby.jpeg",
+            "title": "Porque razão Abby matou Joel?",
+            "description": "",
+            "answer": 1,
+            "alternatives": [
+                "Abby matou Joel porque ele estava infectado",
+                "Abby matou Joel para se vingar da morte do pai dela, pois Joel tinha o matado",
+                "Abby matou Joel para salvar o seu amigo",
+                "Abby matou Joel porque ele matou todos os seus amigos"
+            ]
+        },
+        {
+            "image": "https://i2.wp.com/manualdosgames.com/wp-content/uploads/2019/09/The-Last-of-Us-2-Joel-1170x700.jpg",
+            "title": "Como Joel morre?",
+            "description": "",
+            "answer": 1,
+            "alternatives": [
+                "facada",
+                "espancado",
+                "tiro",
+                "mordida"
+            ]
+        },
+        {
+            "image": "https://i0.wp.com/www.gamesplus.it/wp-content/uploads/2020/05/The-Last-of-Us-Part-2-personaggi.jpg?ssl=1",
+            "title": "Quais assassinos do Joel foram mortos por Ellie e Tommy?",
+            "description": "",
+            "answer": 1,
+            "alternatives": [
+                "Ellie: Jordan, Nora, Owen, Leah e Mel; Tommy: Nick e Manny",
+                "Ellie: Jordan, Nora, Owen e Mel; Tommy: Nick e Manny"
+            ]
+        },
+        {
+            "image": "https://atorredecontrole.com.br/wp-content/uploads/2019/05/the-last-of-us-2-5_8w87jLV.jpg",
+            "title": "Quem do LADO de Ellie morre?",
+            "description": "",
+            "answer": 2,
+            "alternatives": [
+                "Joel, Jesse, Dina e Tommy",
+                "Joel",
+                "Joel e Jesse",
+                "Joel, Jesse e Dina"
             ]
         }
+        
     ],
     "external": [
         ""
