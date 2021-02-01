@@ -1,19 +1,19 @@
+import React from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
-import React from 'react';
-import { Router, useRouter } from 'next/router';
+import { motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 
 import db from '../db.json';
 import Widget from '../src/components/Widget';
+import Link from '../src/components/Link';
+import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
+import QuizContainer from '../src/components/QuizContainer';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizContainer from '../src/components/QuizContainer';
 import Input from '../src/components/Input';
 import Button from '../src/components/Button';
-import FogAnimation from '../src/components/FogAnimation';
-
 
 /*const BackgroundImage = styled.div`
   background-image: url(${db.bg});
@@ -33,9 +33,18 @@ export default function Home() {
       </Head>
       <QuizContainer>
         <QuizLogo />
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Header>
-            <h1>The Last of Us</h1>
+            <h1>THE LAST OF US</h1>
           </Widget.Header>
           <Widget.Content>
             <p>
@@ -54,30 +63,58 @@ export default function Home() {
                 value={name}
               />
               <Button type="submit" disabled={name.length === 0}>
-                {`Jogar ${name}`}
+                {`Jogar`}
               </Button>
             </form>
           </Widget.Content>
         </Widget>
 
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Content>
             <h1>Quizes da galera</h1>
             <p>Dá uma olhada nesses quizes incríveis que o pessoal da Imersão React fez:</p>
+            
             <ul>
-              <li>
-                <a href="https://aluraquiz-css.omariosouto.vercel.app/">omariosouto/aluraquiz-css</a>
-              </li>
-              <li>
-                <a href="https://aluraquiz-css.omariosouto.vercel.app/quiz/aluraquiz-base___alura-challenges">alura-challenges/aluraquiz-base</a>
-              </li>
-              <li>
-                <a href="https://aluraquiz-css.omariosouto.vercel.app/quiz/aluraquiz-devsoutinho___omariosouto">omariosouto/aluraquiz-devsoutinho</a>
-              </li>
+              {db.external.map((linkExterno) => {
+                const [projectName, githubUser] = linkExterno
+                  .replace(/\//g, '')
+                  .replace('https:', '')
+                  .replace('.vercel.app', '')
+                  .split('.');
+
+                return (
+                  <li key={linkExterno}>
+                    <Widget.Topic
+                      as={Link} 
+                      href={`/quiz/${projectName}___${githubUser}`}
+                    >
+                      {`${githubUser}/${projectName}`}
+                    </Widget.Topic>
+                  </li>
+                );
+              })}
             </ul>
           </Widget.Content>
         </Widget>
-        <Footer />
+        <Footer 
+          as={motion.section}
+          transition={{ delay: 1, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/pedrojrodrigues" />
     </QuizBackground>

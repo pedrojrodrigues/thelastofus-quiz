@@ -46,17 +46,6 @@ Widget.Content = styled.div`
     padding: 0;
     margin-top: 20px;
   }
-  li {
-    margin-bottom: 8px;
-    padding: 5px 15px 5px 15px;
-    background: #394E5B;
-    border-radius: 1px;
-  }
-  a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-  }
 `;
 
 Widget.Topic = styled.a`
